@@ -5,6 +5,7 @@ module Api
 
     def index
       @projects = current_user.projects
+      binding.pry
       render json: @projects
     end
 
